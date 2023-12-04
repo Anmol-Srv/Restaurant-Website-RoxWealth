@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# RoxWealth Restaurant Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Welcome to the RoxWealth Restaurant Website, a visually captivating frontend application designed to showcase the rich and diverse offerings of a restaurant. Featuring a modern and engaging user interface, this application provides a delightful browsing experience, highlighting menu items, chef details, and upcoming events through API calls to a dummy backend.
 
-## Available Scripts
+## Installation and Setup
 
-In the project directory, you can run:
+### Prerequisites
+- Node.js (Version 12.0 or later)
+- npm (Node Package Manager)
 
-### `npm start`
+### Setup Instructions
+```bash
+# Clone the repository
+git clone https://github.com/Anmol-Srv/Restaurant-Website-RoxWealth
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Navigate to the project directory
+cd Restaurant-Website-RoxWealth
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Install dependencies
+npm install
 
-### `npm test`
+# Start the application
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# The website will be available at
+http://localhost:3000
+```
+## Components Description
 
-### `npm run build`
+### `src`
+- **App.js**: The central React component orchestrating the entire application's layout and functionality.
+- **index.js**: The entry point of the React application, where the root component is rendered into the DOM.
+- **components**: A directory housing all the individual, reusable components of the website, including:
+- **Header**: The top navigation bar, providing links to different sections of the website.
+- **FoodItemSlider**: A dynamic carousel slider showcasing the restaurant's food items.
+- **LandingPage**: The primary landing page component, welcoming visitors with engaging visuals.
+- **ChefDetail**: A component dedicated to displaying the chef's biography and culinary expertise.
+- **Awards**: Highlights the accolades and recognitions received by the restaurant.
+- **EventsSection**: Showcases upcoming events and special occasions at the restaurant.
+- **Footer**: The footer section, containing contact information and additional links.
+- **assets**: Includes images, logos, and other static files utilized across the website.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `public`
+- This directory contains the public assets such as the favicon, the main HTML file (`index.html`), and other resources like the manifest and `robots.txt` for web standards.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `restaurantData.json`
+- A mock JSON file simulating backend data, including menu items, chef details, and event information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `server.js`
+- A simple Node.js server script for serving the React app and handling API requests in a development environment.
 
-### `npm run eject`
+## REST API Documentation
+The server exposes various endpoints to retrieve information about the restaurant, including details about the chef, awards, events, menu, and reviews.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Base URL
+Assuming the server runs locally, the base URL for the API would be:
+http://localhost:3000/api
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Get Restaurant Information
+- **Endpoint**: `/api/restaurant`
+- **Method**: `GET`
+- **Description**: Retrieves general information about the restaurant, including name, location, ambiance, and sustainability practices.
+- **Response Example**:
+  ```json
+  {
+    "name": "Restaurant Name",
+    "location": "Restaurant Location",
+    "ambiance": "Description of the ambiance",
+	  "chef": "Description about the chef of the Restaurant",
+	  "awards": "Awards and achievements of the chef",
+    "sustainability": "Sustainability practices information",
+		"events": "Description and dates for the upcoming events",
+		"online_presence": "Social media handles of the restaurants",
+		"menu": "Detailed description about the menu and dishes"
+  }
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage and Examples
+- **Viewing the Menu**: Visitors can explore the food item slider to browse the menu.
+- **Discovering Chef and Awards**: Detailed information about the chef and the restaurant's awards are prominently displayed.
+- **Learning About Events**: The Events Section keeps visitors informed about upcoming events and special dining experiences.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is open-sourced under the MIT License. See the [LICENSE](LICENSE) file for full details.
