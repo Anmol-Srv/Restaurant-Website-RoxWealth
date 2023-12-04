@@ -1,0 +1,61 @@
+.swiper-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-page {
+    text-align: center;
+    color: white;
+  }
+  
+  .restaurant-header {
+    background-size: cover;
+    background-position: center;
+    height: 95vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .above-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurant-name {
+    font-size: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .restaurant-description {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    max-width: 60%;
+  }
+  
+  .restaurant-details{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.address-section{
+    margin-left: 4rem;
+    text-align: left;
+}
+
+.address-section,p{
+ font-size: 2rem;
+}
+
+.social-media{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}

@@ -1,0 +1,46 @@
+.events-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.events-title{
+    font-size: 3rem;
+}
+.events-section {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event-card {
+    display: flex;
+    margin: 2rem;
+    width: 80%;
+  }
+  
+  .event-card.reversed {
+    flex-direction: row-reverse;
+  }
+  
+  .event-image img {
+    margin: 2rem;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  
+  .event-info {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: left;
+  }
+  .event-info h2{
+    font-size: 2rem;
+  }
+
+  .date-para{
+    font-size: 1.5rem;
+    color: white;
+  }

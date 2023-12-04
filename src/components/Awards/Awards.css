@@ -1,0 +1,36 @@
+.awards-section {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .award-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .trophy-image {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .award-title {
+    padding: 5px;
+    background-color: rgb(98, 255, 255);
+    font-size: 2rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .award-year, .award-by {
+      color: #666;
+      font-size:1rem;
+  }
